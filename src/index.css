@@ -13,33 +13,67 @@ code {
     monospace;
 }
 
-.navbar{
+/* .navbar{
+  position: fixed;
+  width: 100vw;
   background-color: white;
   border-bottom: 2px solid #dbdbdb;
-  padding-left: 300px;
-  padding-right: 300px;
+  
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  height: 54px;
+  justify-content: space-between;
+  
+} */
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 300px;
+  padding-right:300px;
 }
 
 .dua{
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding: 3px 10px 3px 20px;
   background-color: #fafafa;
-  border:3px;
-  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 200px;
+  position: relative;
+}
+
+.dua form{
+  position: relative;
 }
 
 .dua input{
   border: none;
   background-color: #fafafa;
-  justify-content: center;
+  padding-left: 20px;
 }
 
 .cari{
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 20%;
+}
+
+.iconnav{
+  display: flex;
+  height: 25px;
+  width: 25px;
+  padding-left: 5px;
   padding-right: 5px;
+}
+
+.tiga{
+  display: flex;
 }
