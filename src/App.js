@@ -5,10 +5,11 @@ import img2 from './img/home.png'
 import img3 from './img/dm.png'
 import img4 from './img/like.png'
 import img5 from './img/profile.png'
+import img6 from './img/story.png'
 
 const App = () => {
   return (
-    <div >
+    <div className="luar">
       <div className="navbar">
         <div className="satu">
           INSTAGRAM
@@ -28,6 +29,26 @@ const App = () => {
         </div>
       </div>
       <div className="konten">
+        <div className="kiri">
+          <div className="storybar">
+            <div className="story">
+              <img src={img6} alt="" />
+              <img src={img6} alt="" />
+              <img src={img6} alt="" />
+              <img src={img6} alt="" />
+              <img src={img6} alt="" />
+              <img src={img6} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="tengah">
+          anu
+        </div>
+        <div className="kanan">
+          anu
+        </div>
+
+
 
       </div>
     </div>

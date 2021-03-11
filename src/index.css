@@ -26,6 +26,11 @@ code {
   
 } */
 
+.luar{
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar{
   position: fixed;
   width: 100%;
@@ -76,4 +81,54 @@ code {
 
 .tiga{
   display: flex;
+}
+
+.konten{
+  padding-top: 80px;
+  padding-left: 300px;
+  padding-right: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.kiri{
+  background-color: rgb(172, 172, 243);
+  display: flex;
+  flex-grow: 4;
+}
+
+.storybar{
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  height: 84px;
+}
+
+.story{
+  position: absolute;
+  overflow: scroll;
+}
+
+.story img{
+  width: 80px;
+  height: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.tengah{
+  background-color: rgb(228, 255, 200);
+  display: flex;
+  flex-grow: 0.1;
+}
+
+.kanan{
+  background-color: rgb(255, 180, 180);
+  display: flex;
+  flex-grow: 2;
 }
