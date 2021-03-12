@@ -43,7 +43,20 @@ const App = () => {
             </div>
           </div>
           <div className="post">
-            INI POST
+            <div className="postbar">
+              <div className="navpost">
+                <img className="iconpost" src={img5} alt="avatar" />
+                <span>hey</span>
+              </div>
+              <div className="menu">
+                <span>ooo</span>
+              </div>
+            </div>
+            <div className="isipost"></div>
+            <div className="reactpost"></div>
+            <div className="likepost"></div>
+            <div className="statuspost"></div>
+            <div className="timepost"></div>
           </div>
         </div>
         <div className="tengah">
