@@ -28,7 +28,7 @@ const App = () => {
           <img className="iconnav" src={img5} alt="avatar" />
         </div>
       </div>
-      <div className="konten">
+      <div className="isi">
         <div className="kiri">
           <div className="storybar">
             <div className="story">
@@ -38,7 +38,12 @@ const App = () => {
               <img src={img6} alt="" />
               <img src={img6} alt="" />
               <img src={img6} alt="" />
+              <img src={img6} alt="" />
+              <img src={img6} alt="" />
             </div>
+          </div>
+          <div className="post">
+            INI POST
           </div>
         </div>
         <div className="tengah">

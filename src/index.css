@@ -83,7 +83,7 @@ code {
   display: flex;
 }
 
-.konten{
+.isi{
   padding-top: 80px;
   padding-left: 300px;
   padding-right: 300px;
@@ -95,6 +95,7 @@ code {
 .kiri{
   background-color: rgb(172, 172, 243);
   display: flex;
+  flex-direction: column;
   flex-grow: 4;
 }
 
@@ -105,12 +106,20 @@ code {
   flex-direction: row;
   padding: 10px 10px 10px 10px;
   width: 100%;
-  height: 84px;
+  height: 115px;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.storybar::-webkit-scrollbar {
+  display: none;
 }
 
 .story{
   position: absolute;
-  overflow: scroll;
 }
 
 .story img{
@@ -120,6 +129,11 @@ code {
   padding-right: 5px;
 }
 
+.post{
+  display: flex;
+  border: 1px solid black;
+  margin-top: 30px;
+}
 
 .tengah{
   background-color: rgb(228, 255, 200);
