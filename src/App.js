@@ -6,6 +6,9 @@ import img3 from './img/dm.png'
 import img4 from './img/like.png'
 import img5 from './img/profile.png'
 import img6 from './img/story.png'
+import img7 from './img/pict.jpg'
+import img8 from './img/comment.png'
+import img9 from './img/save.png'
 
 const App = () => {
   return (
@@ -45,18 +48,36 @@ const App = () => {
           <div className="post">
             <div className="postbar">
               <div className="navpost">
-                <img className="iconpost" src={img5} alt="avatar" />
+                <img className="iconpost" src={img5} alt="" />
                 <span>hey</span>
               </div>
               <div className="menu">
                 <span>ooo</span>
               </div>
             </div>
-            <div className="isipost"></div>
-            <div className="reactpost"></div>
-            <div className="likepost"></div>
-            <div className="statuspost"></div>
-            <div className="timepost"></div>
+            <div className="isipost">
+              <img className="postpic" src={img7} alt="" />
+            </div>
+            <div className="reactpost">
+              <div className="respon">
+                <img className="iconreact" src={img4} alt="" />
+                <img className="iconreact" src={img8} alt="" />
+                <img className="iconreact" src={img3} alt="" />
+              </div>
+              <div className="keep">
+                <img className="iconreact" src={img9} alt="" />
+              </div>
+            </div>
+            <div className="likepost">
+              <span>368 likes</span>
+            </div>
+            <div className="statuspost">
+              <span>salmonella</span>
+              idgaf
+            </div>
+            <div className="timepost">
+              1  HOUR AGO
+            </div>
           </div>
         </div>
         <div className="tengah">
