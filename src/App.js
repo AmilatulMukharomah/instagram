@@ -48,7 +48,7 @@ const App = () => {
           <div className="post">
             <div className="postbar">
               <div className="navpost">
-                <img className="iconpost" src={img5} alt="" />
+                <img className="iconpost" src={img7} alt="" />
                 <span>hey</span>
               </div>
               <div className="menu">
