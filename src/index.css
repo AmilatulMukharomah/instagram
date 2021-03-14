@@ -13,19 +13,6 @@ code {
     monospace;
 }
 
-/* .navbar{
-  position: fixed;
-  width: 100vw;
-  background-color: white;
-  border-bottom: 2px solid #dbdbdb;
-  
-  display: flex;
-  align-items: center;
-  height: 54px;
-  justify-content: space-between;
-  
-} */
-
 .luar{
   display: flex;
   flex-direction: column;
@@ -43,6 +30,7 @@ code {
   box-sizing: border-box;
   padding-left: 300px;
   padding-right:300px;
+  z-index: 2;
 }
 
 .dua{
@@ -234,9 +222,17 @@ code {
   padding: 10px 10px 10px 10px;
 }
 
+.isilah{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 280px;
+}
+
 .userprofile{
   display: flex;
   align-items: center;
+  
 }
 
 .profpict{

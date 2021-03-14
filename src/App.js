@@ -79,22 +79,61 @@ const App = () => {
               1  HOUR AGO
             </div>
           </div>
+          <div className="post">
+            <div className="postbar">
+              <div className="navpost">
+                <img className="iconpost" src={img7} alt="" />
+                <span>hey</span>
+              </div>
+              <div className="menu">
+                <span>ooo</span>
+              </div>
+            </div>
+            <div className="isipost">
+              <img className="postpic" src={img7} alt="" />
+            </div>
+            <div className="reactpost">
+              <div className="respon">
+                <img className="iconreact" src={img4} alt="" />
+                <img className="iconreact" src={img8} alt="" />
+                <img className="iconreact" src={img3} alt="" />
+              </div>
+              <div className="keep">
+                <img className="iconreact" src={img9} alt="" />
+              </div>
+            </div>
+            <div className="likepost">
+              <span>368 likes</span>
+            </div>
+            <div className="statuspost">
+              <span>salmonella</span>
+              idgaf
+            </div>
+            <div className="timepost">
+              1  HOUR AGO
+            </div>
+          </div>
         </div>
         <div className="tengah">
           anu
         </div>
         <div className="kanan">
-          <div className="userprofile">
-            <div className="profile">
-              <img className="profpict" src={img7} alt="" />
+          <div className="isilah">
+            <div className="userprofile">
+              <div className="profile">
+                <img className="profpict" src={img7} alt="" />
+              </div>
+              <div className="user">
+                <span>Salmonella</span>
+                <span>UwU</span>
+              </div>
+              <div className="spacer"></div>
+              <div className="action">
+                <span>switch</span>
+              </div>
             </div>
-            <div className="user">
-              <span>Salmonella</span>
-              <span>UwU</span>
-            </div>
-            <div className="spacer"></div>
-            <div className="action">
-              <span>switch</span>
+            <div className="sugestion">
+              <span>sugestion</span>
             </div>
           </div>
         </div>
