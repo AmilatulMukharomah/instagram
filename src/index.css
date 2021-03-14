@@ -229,4 +229,33 @@ code {
   background-color: rgb(255, 180, 180);
   display: flex;
   flex-grow: 2;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+}
+
+.userprofile{
+  display: flex;
+  align-items: center;
+}
+
+.profpict{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.spacer{
+  flex: 1;
+}
+
+.action{
+  justify-self: flex-end;
 }

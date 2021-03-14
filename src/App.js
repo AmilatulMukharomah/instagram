@@ -84,11 +84,20 @@ const App = () => {
           anu
         </div>
         <div className="kanan">
-          anu
+          <div className="userprofile">
+            <div className="profile">
+              <img className="profpict" src={img7} alt="" />
+            </div>
+            <div className="user">
+              <span>Salmonella</span>
+              <span>UwU</span>
+            </div>
+            <div className="spacer"></div>
+            <div className="action">
+              <span>switch</span>
+            </div>
+          </div>
         </div>
-
-
-
       </div>
     </div>
 
