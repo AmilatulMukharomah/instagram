@@ -9,13 +9,15 @@ import img6 from './img/story.png'
 import img7 from './img/pict.jpg'
 import img8 from './img/comment.png'
 import img9 from './img/save.png'
+import img10 from './img/instagram.png'
+import img11 from './img/smile.png'
 
 const App = () => {
   return (
     <div className="luar">
       <div className="navbar">
         <div className="satu">
-          INSTAGRAM
+          <img className="instagram" src={img10} alt="avatar" />
         </div>
         <div className="dua">
           <form >
@@ -78,41 +80,17 @@ const App = () => {
             <div className="timepost">
               1  HOUR AGO
             </div>
-          </div>
-          <div className="post">
-            <div className="postbar">
-              <div className="navpost">
-                <img className="iconpost" src={img7} alt="" />
-                <span>hey</span>
+            <div className="komentar">
+              <div className="coment">
+                <img className="" src={img11} alt="" />
+                <span>Add a comment...</span>
               </div>
-              <div className="menu">
-                <span>ooo</span>
+              <div className="kirim">
+                Post
               </div>
-            </div>
-            <div className="isipost">
-              <img className="postpic" src={img7} alt="" />
-            </div>
-            <div className="reactpost">
-              <div className="respon">
-                <img className="iconreact" src={img4} alt="" />
-                <img className="iconreact" src={img8} alt="" />
-                <img className="iconreact" src={img3} alt="" />
-              </div>
-              <div className="keep">
-                <img className="iconreact" src={img9} alt="" />
-              </div>
-            </div>
-            <div className="likepost">
-              <span>368 likes</span>
-            </div>
-            <div className="statuspost">
-              <span>salmonella</span>
-              idgaf
-            </div>
-            <div className="timepost">
-              1  HOUR AGO
             </div>
           </div>
+
         </div>
         <div className="tengah">
           anu
@@ -138,6 +116,7 @@ const App = () => {
           </div>
         </div>
       </div>
+
     </div>
 
   );

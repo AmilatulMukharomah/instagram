@@ -33,6 +33,10 @@ code {
   z-index: 2;
 }
 
+.instagram{
+  width: 100px;
+}
+
 .dua{
   padding: 3px 10px 3px 20px;
   background-color: #fafafa;
@@ -81,7 +85,6 @@ code {
 
 
 .kiri{
-  background-color: rgb(172, 172, 243);
   display: flex;
   flex-direction: column;
   flex-grow: 4;
@@ -89,7 +92,7 @@ code {
 
 .storybar{
   position: relative;
-  border: 1px solid black;
+  border: 1px solid rgb(197, 197, 197);
   display: flex;
   flex-direction: row;
   padding: 10px 10px 10px 10px;
@@ -122,7 +125,7 @@ code {
 .post{
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid rgb(197, 197, 197);
   margin-top: 30px;
 }
 
@@ -131,9 +134,8 @@ code {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  padding: 10px;
 }
 
 .navpost{
@@ -205,16 +207,46 @@ code {
   font-size: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
+  color: rgb(160, 160, 160);
+}
+
+.komentar{
+  padding: 15px;
+  border-top: 1px solid rgb(197, 197, 197);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.komentar img{
+  width: 30px;
+  height: 30px;
+  padding-right: 15px;
+}
+
+.coment{
+  display: flex;
+  align-items: center;
+}
+
+.coment span{
+  color: rgb(133, 133, 133);
+}
+
+.kirim{
+  font-weight: bold;
+  color: rgba(70, 70, 255, 0.5);
 }
 
 .tengah{
-  background-color: rgb(228, 255, 200);
   display: flex;
   flex-grow: 0.1;
+  color: transparent;
 }
 
 .kanan{
-  background-color: rgb(255, 180, 180);
   display: flex;
   flex-grow: 2;
   flex-direction: column;
