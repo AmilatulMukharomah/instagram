@@ -12,7 +12,7 @@ import img9 from './img/save.png'
 import img10 from './img/instagram.png'
 import img11 from './img/smile.png'
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="luar">
       <div className="navbar">
@@ -113,10 +113,10 @@ const App = () => {
             <div className="sugestion">
               <span>sugestion</span>
             </div>
+            <button onClick={() => props.props_onLogout()}>Logout</button>
           </div>
         </div>
       </div>
-
     </div>
 
   );
