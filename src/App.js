@@ -11,8 +11,11 @@ import img8 from './img/comment.png'
 import img9 from './img/save.png'
 import img10 from './img/instagram.png'
 import img11 from './img/smile.png'
+import React, { useState, useEffect } from 'react';
+import Login from './Login'
 
 const App = (props) => {
+
   return (
     <div className="luar">
       <div className="navbar">
@@ -113,7 +116,7 @@ const App = (props) => {
             <div className="sugestion">
               <span>sugestion</span>
             </div>
-            <button onClick={() => props.props_onLogout()}>Logout</button>
+            <button onClick={() => props.onLogout()}>Logout</button>
           </div>
         </div>
       </div>

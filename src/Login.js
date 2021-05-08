@@ -1,9 +1,8 @@
-import React from 'react'
+import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
-import img1 from './img/instagram.png'
-import App from './App';
-
+import Content from './App';
+import { BrowserRouter, Route, Redirect, Switch, useHistory, Link, useLocation } from 'react-router-dom';
 
 const Login = () => {
 
@@ -12,7 +11,7 @@ const Login = () => {
     const [isLoggedin, setIsloggedin] = useState(false)
 
     useEffect(() => {
-        // alert('Selamat Datang')
+        alert('Selamat Datang')
         return () => {
         }
     }, [])
@@ -21,40 +20,43 @@ const Login = () => {
         e.preventDefault()
         if (username === 'admin' && password === 'admin') {
             setIsloggedin(true)
-            setUsername('')
-            setPassword('')
         } else {
             alert('Salah')
         }
     }
 
-    const onLogout = () => {
+    const onLogout = (e) => {
         setIsloggedin(false)
     }
 
     return (
         <>
-            {!isLoggedin &&
-                <div className="login">
-                    <img className="judul_login" src={img1} alt="avatar" />
-                    <form onSubmit={e => onLogin(e)}>
-                        <div className="email">
-                            <input type="text" name="username" onChange={e => setUsername(e.target.value)} placeholder="Email"></input>
-                        </div>
-                        <div className="password">
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value)} placeholder="Password"></input>
-                        </div>
-                        <button>login</button>
-                    </form>
-                </div>
-            }
-
-            {isLoggedin &&
-                <App props_onLogout={onLogout} />
-            }
-
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/">
+                        {isLoggedin ? <Content /> : <Redirect to="/login"></Redirect>}
+                    </Route>
+                    <Route exact path="/login">
+                        {!isLoggedin ?
+                            <div className="login">
+                                <p className="judul_login">LOGIN</p>
+                                <form onSubmit={e => onLogin(e)}>
+                                    <div className="email">
+                                        <input type="text" name="username" onChange={e => setUsername(e.target.value)} placeholder="Email"></input>
+                                    </div>
+                                    <div className="password">
+                                        <input type="password" name="password" onChange={e => setPassword(e.target.value)} placeholder="Password"></input>
+                                    </div>
+                                    <button>login</button>
+                                </form>
+                            </div> :
+                            <Redirect to="/" />
+                        }
+                    </Route>
+                </Switch>
+            </BrowserRouter>
         </>
-    )
+    );
 }
 
-export default Login
+export default Login;
